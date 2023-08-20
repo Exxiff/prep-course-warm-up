@@ -2,8 +2,8 @@ export {};
 
 const library = [
   {
-    title: "Bill Gates",
-    author: "The Road Ahead",
+    title: "The Road Ahead",
+    author: "Bill Gates",
     isRead: true
   },
   {
@@ -18,7 +18,15 @@ const library = [
   }
 ];
 
-const showStatus = () => {};
+const showStatus = (any:any[]) => {
+  for (let i = 0; i < library.length; i++) {
+    const book = library[i];
+    if (book.isRead !== false)
+    console.log(`Already read '${book.title}' by ${book.author}.`)
+  else {
+    console.log(`You still need to read '${book.title}' by ${book.author}.`)
+  }
+}};
 
 showStatus(library);
 

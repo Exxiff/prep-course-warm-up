@@ -1,6 +1,7 @@
 export {};
 
-function concatenate(firstWord, secondWord, thirdWord) {
+function concatenate(firstWord:string, secondWord:string, thirdWord:string) {
+    return firstWord.concat(' ').concat(secondWord).concat(' '+thirdWord)
   // Write the body of this function to concatenate three words together with space between them
 }
 

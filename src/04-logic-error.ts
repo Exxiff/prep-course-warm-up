@@ -1,7 +1,7 @@
 export {};
-
-function trimWord(word) {
-  return wordtrim();
+//trim() removes spaces
+function trimWord(word:string) {
+  return word.trim();
 }
 
 const result = trimWord("  CODELEX ");

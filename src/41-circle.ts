@@ -10,11 +10,15 @@ export {};
  *  - https://www.youtube.com/watch?v=Pi3QC_fVaD0 (JavaScript this Keyword Explained In 3 Minutes)
  *  - https://www.youtube.com/watch?v=YOlr79NaAtQ (What is THIS in JavaScript? in 100 seconds)
  */
-
-function Circle(radius) {
+//NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE NOPE 
+function Circle(radius:number) {
   this.radius = radius;
-  this.area = function() {};
-  this.perimeter = function() {};
+  this.area = function(number:number) {
+    return Math.PI * this.radius * this.radius;
+  };
+  this.perimeter = function(number:number) {
+    return 2 * Math.PI * this.radius;
+  };
 }
 
 const c = new Circle(3);

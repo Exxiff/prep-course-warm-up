@@ -1,3 +1,5 @@
+import { Type } from "typescript";
+
 export {};
 
 /**
@@ -8,7 +10,13 @@ export {};
  */
 
 // You are allowed to edit only this function
-function remove(arr, valueToRemove) {}
+function remove(arr: any, valueToRemove: string | number) {
+  // makes a copy
+  let newArray = [...arr];
+  const index = newArray.indexOf(valueToRemove);
+  newArray.splice(index, 1);
+  return newArray;
+}
 
 const numbers = [1, 2, 3];
 const names = ["John", "Alice", "Ellen"];

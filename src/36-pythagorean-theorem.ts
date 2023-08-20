@@ -10,7 +10,10 @@ export {};
  * and name them in your function accordingly.
  */
 
-const pythagoreanTheorem = () => {};
+const pythagoreanTheorem = (leg1: number, leg2: number) => {
+  let hypotenuse = Math.sqrt(leg1 * leg1 + leg2 * leg2);
+  return hypotenuse;
+};
 
 console.log(pythagoreanTheorem(2, 4)); // Expected result: 4.47213595499958
 console.log(pythagoreanTheorem(3, 4)); // Expected result: 5
